@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+/* 브라우저가 가지고 있는 기본값이 조금씩 차이가 나기 때문에 기본 설정을 해주는 것이 좋다. */
+	*{margin: 0px; padding: 0px;}
+	#wrap{
+		width: 200px; height: 200px;
+		background-color: yellow;
+		padding-top: 30px; padding-left: 20px;
+		/* 아래처럼 하면 항상 중앙에 배치 */
+	 	margin: auto;
+	}
+	#inner{
+		width: 50px; height: 150px;
+		background-color: blue;
+		padding-top: 30px; padding-left: 20px;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="inner">test</div>
+	</div>
+
+</body>
+</html>

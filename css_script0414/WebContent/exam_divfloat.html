@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div {
+	width: 120px;
+	height: 120px;
+	border: 2px dotted black;
+}
+
+.first {
+	background-color: cyan;
+	float: left;
+}
+
+.second {
+	background-color: magenta;
+	float: left;
+}
+
+.third {
+	background-color: yellow;
+	float: left;
+}
+
+.bottom {
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<div class="first"></div>
+	<div class="second"></div>
+	<div class="first"></div>
+
+	<div class="second bottom"></div>
+	<div class="first"></div>
+	<div class="third"></div>
+
+	<div class="third bottom"></div>
+	<div class="third"></div>
+	<div class="second"></div>
+
+</body>
+</html>

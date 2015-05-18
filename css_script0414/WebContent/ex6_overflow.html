@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	*{ margin: 0px; padding: 0px;}
+	.container{
+		width: 300px;
+		height: 100px;
+		background-color: magenta;
+		border: 1px solid black;
+		position: relative; /* 부모로부터의 상대 위치 */
+		/*
+			visible: 정의된 화면의 크기보다 컨텐츠가 길어도 그대로 보여진다.
+			hidden: 정의된 화면의 크기만큼 표시되고, 나머지는 보여지지 않는다.
+			scroll: 스크롤바가 항상 표시
+			auto: 정의된 화면의 크기가 넘었을 때 알아서 스크롤된다.
+		*/
+		overflow: hidden;
+	}
+	.item{
+		width: 500px;
+		height: 80px;
+		vertical-align: middle;
+		background-color: cyan;
+		position: absolute; /* top, left로 절대 좌표 위치 */
+		top: 5px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item"></div>
+	</div>
+</body>
+</html>

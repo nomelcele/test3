@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	div {
+		width: 120px; height: 120px; border: 2px dotted yellow;
+		background-color: yellow;
+	}
+	/* float: 자신의 위치를 부모 element로부터 상대적으로 배치하는 속성, 
+	기준점 (0,0) => 표 안에 있으면 표의 시작점이 된다. (표->부모 element가 됨)*/
+	.first{
+		background-color: orange;
+		float: left; /* 좌측으로 배치 (왼쪽 끝부터)*/
+	}
+	.second{
+		background-color: blue;
+		float: right; /* 우측으로 배치 (오른쪽 끝부터)*/
+	}
+	.bottom{
+		clear: both; /* left, right, both(모두)*/
+		/* clear를 하면 기준점이 새로 지정됨 */
+		background-color: green;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="first"></div>
+	<div class="first"></div>
+	<div class="first"></div>
+	<div class="second"></div>
+	<div class="second"></div>
+	<div class="second"></div>
+	<div class="bottom"></div>
+	<div class="bottom"></div>
+	<div class="bottom"></div>
+</body>
+</html>

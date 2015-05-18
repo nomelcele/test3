@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+
+
+#menu ul {
+/* margin: border를 기준으로 바깥 영역의 폭 */
+	margin: 0; 
+	margin-bottom: 1em;
+/* padding: border를 기준으로 안쪽 영역의 폭*/
+	padding-left: 0;
+	float: left;
+	font-weight: bold;
+	width: 100%;
+	border: 1px solid #DFDFDF;
+	border-width: 1px 0;
+}
+
+*html #menu ul {
+	margin-bottom: 0;
+}
+
+#menu ul li {
+/* 블록 레벨 요소를 inline 레벨로 변경하면, 옆으로 배치되는 효과(float를 대체할 수 있다)*/
+	display: inline;
+}
+
+#menu ul li a { /*a href의 기본 스타일을 정의 */
+	float: left;
+	color: gray;
+	font-weight: bold;
+	padding: 2px 6px 4px 6px;
+	text-decoration: none;
+	background: white;
+}
+
+#menu ul li a:hover{ /* hover: 마우스를 올렸을 때 이벤트를 스타일로 적용 */
+	color: black;
+	background-color: #F3F3F3;
+	border-bottom: 4px solid black;
+	padding-bottom: 0;
+}
+</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="" title="Home">Home</a></li>
+			<li><a href="" title="CSS Library">CSS</a></li>
+			<li><a href="" title="New">New</a></li>
+			<li id="current"><a href="" title="Revised">Revised</a></li>
+			<li><a href="" title="Tools">Tools</a></li>
+			<li><a href="" title="DHTMl Forums">Forums</a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	div{
+		border: 1px solid red; width: 200px; height: 200px;
+	}
+	/* p 태그에 배경과 크기만 주려고 한다. 이 때 첫번째에만 효과를 적용하려면? */
+	/* 3-2. 부모 자식 형식으로 적용 */
+	div > p{
+		background-color: green; widtvh: 100px;
+	}
+	/* 3-2. 부모의 모든 자손 형식으로 적용 
+	부모div 자식span 자손p */
+	div span { color: red; }
+</style>
+</head>
+<body>
+	<div><p>첫번째</p></div>
+	<p>두번째</p>
+	<div>
+		<span>세번째</span>
+	<p>
+		<span>Test</span>
+	</p></div>
+</body>
+</html>

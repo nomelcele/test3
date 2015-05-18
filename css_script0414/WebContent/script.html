@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>script.html</title>
+<style>
+	#target{ width: 300px; height: 200px; border: 1px solid black; }
+</style>
+<script>
+	// onload는 브라우저가 모든 자원을 다 읽어낼 때까지 기다려주는 이벤트
+	// 기다렸다가 모두 로드가 되면 익명 함수를 호출한다. ***
+	window.onload=function(){
+		var name; // 이름을 저장할 변수 (전역변수)
+		name = window.prompt("당신의 이름은", "여기에 입력") // 입력창 생성
+		// getElementById("아이디") -> dom의 주소를 id로 접근해라 (call by reference)
+		// innerHTML -> 그 dom에 값으로 html을 넣어라
+		document.getElementById("target").innerHTML="<p style='color:blue'>입력한 이름은 "+name+"입니다.</p>";
+	};
+</script>
+</head>
+<body>
+<!-- Div target = new Div();
+	자바로 표현하면 이런 식 -->
+	<div id="target"></div> <!--  괄호 사이에 "입력한 이름은 "+name+"입니다."가 들어간다 --> 
+</body>
+<script>
+	// javascript는 브라우저에서 css, html, 이미지, 동영상 등이 모두 렌더링된 이후 ***
+	// (body 위에다 쓰면 div가 없으니까 안 뜸)
+	// dom(document 객체) 및 자원을 핸들링(제어)하기 위한 클라이언트 측 스크립트 언어
+	// => document의 위치: 태그 사이 ex) <div>여기</div> 
+	// 변수는 반드시 선언해서 사용: 변수를 선언시 자료형을 명시하지 않는다.
+	// 전역변수
+	
+	// div는 레이어(위치, 영역)
+	// <p></p> 태그는 단락
+	
+</script>
+</html>

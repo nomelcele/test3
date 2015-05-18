@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>guguDan.html</title>
+
+	<script>
+		function exe(){
+			// for문 사용해서 res에 값 넣기
+			var html = "";
+			var n1 = document.getElementById("dan").value;
+			var n2 = document.getElementById("limit").value;
+			var n3 = parseInt(parseInt(n2,10)/2,10);
+			
+			/* Math.round() 반올림
+			Math.floor() 버림 */
+			
+			html += "<table style='border: 1px solid; background-color: yellow;'>";
+			for(var i=0; i<10; i++){
+				html += "<tr>";
+				for(var j=(parseInt(n1,10)-n3); 
+				j<=(parseInt(n1,10)+n3); j++){
+					// 정수로 변환
+					if(i==0){
+						html += "<td>"+j+"단</td>";
+					} else {
+						html += "<td>"+j+" X "+i+" = "+(i*j)+"</td>";
+					}
+				}
+				html += "</tr>";
+			}
+			html += "</table>";
+			document.getElementById("target").innerHTML=html;
+		}
+	</script>
+</head>
+<body>
+		<div>
+			단 입력: <input type="text" name="dan" id="dan">
+			<input type="button" value="입력">
+			<!-- tag에 직접 주는 스타일) 인라인 스타일 -->
+			
+		</div>
+		
+		<div>
+			<select name="limit" id="limit">
+				<option value="">-- 선택 --</option>
+				<option value="3">3</option>
+				<option value="5">5</option>
+				<option value="7">7</option>
+				<option value="9">9</option>
+			</select>
+			<input type="button" value="선택" onclick="exe()">
+		</div>
+	
+	<div id="target"></div>
+	
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+/* 요소, 요소 => 집합 요소 */
+#header, #body, #footer{
+	width: 320px; height: 100px;
+}
+
+#header>div, #body>div, #footer>div{
+	width: 100px; height: 100px;
+	border: 1px dotted; float: left;
+}
+
+.pik{
+	background-color: pink;
+}
+
+.org{
+	background-color: orange;
+}
+
+.blu{
+	background-color: blue;
+}
+
+</style>
+</head>
+<body>
+	<div id="header">
+		<div class="pik"></div>
+		<div class="org"></div>
+		<div class="blu"></div>
+	</div>
+	<div id="body">
+		<div class="org"></div>
+		<div class="pik"></div>
+		<div class="blu"></div>
+	</div>
+	<div id="footer">
+		<div class="blu"></div>
+		<div class="org"></div>
+		<div class="pik"></div>
+	</div>
+</body>
+</html>
